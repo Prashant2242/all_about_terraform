@@ -91,10 +91,10 @@ provider "aws" {
 
 resource "aws_instance" "example" {
 
-  ami           = "ami-01a00762f46d584a1"
+  ami           = "ami-04a00762f46d582a2"
   instance_type = "t3.micro"
 
-  subnet_id = "subnet-0e5a25695eceaab51"
+  subnet_id = "subnet-0e2a25695eceaab23"
 
   key_name = "terraform_key"
 
@@ -206,7 +206,7 @@ Linux Server
 The AMI ID used in this project is:
 
 ```text
-ami-01a00762f46d584a1
+ami-02a00732f46d582a3
 ```
 
 ### Important
@@ -288,7 +288,7 @@ In this project:
 
 ```text
 Subnet ID:
-subnet-0e5a25695eceaab51
+subnet-0e2a25895eceaab63
 ```
 
 ### VPC vs Subnet
@@ -595,41 +595,4 @@ Through this small project, the following AWS and DevOps concepts were practiced
 
 ---
 
-# 🚀 Next Steps
 
-The next concepts to add to this project are:
-
-```text
-EC2
- │
- ├── Security Group
- │
- ├── Internet Gateway
- │
- ├── Route Table
- │
- ├── Public/Private Subnets
- │
- ├── IAM Role
- │
- ├── Elastic IP
- │
- └── User Data
-```
-
-After understanding these, the project can be extended to:
-
-```text
-Terraform
-    │
-    ↓
-VPC
-    │
-    ├── Public Subnet
-    │      └── EC2 / Nginx
-    │
-    └── Private Subnet
-           └── Backend
-```
-
-This provides a foundation for more advanced **AWS, Terraform, networking, Docker, CI/CD, and DevOps projects**.
